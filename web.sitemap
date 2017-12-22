@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<siteMap>
+	<siteMapNode title="Home | " url="Default.aspx">
+		<siteMapNode title="Resume | " url="Professional/Resume.aspx" />
+		<siteMapNode title="Career | " url="Professional/Career.aspx" >
+			<siteMapNode title="Tally" url="Professional/Tally.aspx" />
+			<siteMapNode title="Hardware" url="Professional/Hardware.aspx" />
+		</siteMapNode>
+		<siteMapNode title="Software | " url="Professional/Software.aspx" />
+		<siteMapNode title="History" url="History.aspx" />
+	</siteMapNode>
+</siteMap>

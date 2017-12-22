@@ -1,0 +1,16 @@
+<?xml version="1.0" ?>
+<Applications>
+	<MceTvSpaceMgr>
+		<LatestVersion>1.0.7</LatestVersion>
+		<ReleaseDate>03-06-2006</ReleaseDate>
+		<UpdateURL>http://www.brettrobichaud.com/Utils/MceTvSpaceMgrSetup.msi</UpdateURL>
+		<UpdateWeb>http://www.brettrobichaud.com/Professional/Software.aspx</UpdateWeb>
+	</MceTvSpaceMgr>
+	<RSS.Net>
+		<LatestVersion>1.0.5.27394</LatestVersion>
+		<ReleaseDate>8-11-2004</ReleaseDate>
+		<UpdateURL>http://www.brettrobichaud.com/Utils/RSSNetSetup.msi</UpdateURL>
+		<UpdateWeb>http://www.brettrobichaud.com/Professional/Software.aspx</UpdateWeb>
+	</RSS.Net>
+</Applications>	
+	

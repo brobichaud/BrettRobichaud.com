@@ -1,0 +1,28 @@
+<%@ Master Language="C#" CodeBehind="Default.master.cs" Inherits="Default_master" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" >
+<head runat="server">
+<meta name="verify-v1" content="L1FGbTuq1Ag3PePN/bMpEUqxfiYYq0yI/zhjG9AWBgY=" />
+	<title></title>
+</head>
+<body>
+	<form id="form1" runat="server">
+		<div class="header" style="left: 0px; top: 0px">
+			<h1>Brett Robichaud</h1>
+			<h2>My Personal Site</h2>
+			<asp:menu id="menua" runat="server" datasourceid="SiteMapDataSource1" cssclass="menua" orientation="Horizontal" 
+				maximumdynamicdisplaylevels="0" skiplinktext="" staticdisplaylevels="2" />
+		</div>
+
+		<asp:contentplaceholder id="Main" runat="server" />
+
+		<div class="footerbg">
+			<div class="footer"><br /><br />Copyright &copy; 1997-2012 Brett Robichaud</div>
+		</div>
+
+		<asp:sitemapdatasource id="SiteMapDataSource1" runat="server" startingnodeoffset="0" />
+	</form>
+</body>
+</html>

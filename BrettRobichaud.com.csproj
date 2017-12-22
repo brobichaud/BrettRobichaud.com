@@ -1,0 +1,547 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{D94F8BE2-A262-456D-8F3F-73B6000E7B58}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>BrettRobichaud.com</RootNamespace>
+    <AssemblyName>BrettRobichaud.com</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>4.0</OldToolsVersion>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_Themes\Black\Default.css" />
+    <Content Include="App_Themes\Black\Default.skin" />
+    <Content Include="App_Themes\Black\frame.css" />
+    <Content Include="App_Themes\Black\Images\album-bstretch.gif" />
+    <Content Include="App_Themes\Black\Images\album-l1.gif" />
+    <Content Include="App_Themes\Black\Images\album-l2.gif" />
+    <Content Include="App_Themes\Black\Images\album-l3.gif" />
+    <Content Include="App_Themes\Black\Images\album-l4.gif" />
+    <Content Include="App_Themes\Black\Images\album-lstretch.gif" />
+    <Content Include="App_Themes\Black\Images\album-mbl.gif" />
+    <Content Include="App_Themes\Black\Images\album-mbr.gif" />
+    <Content Include="App_Themes\Black\Images\album-mtl.gif" />
+    <Content Include="App_Themes\Black\Images\album-mtr.gif" />
+    <Content Include="App_Themes\Black\Images\album-r1.gif" />
+    <Content Include="App_Themes\Black\Images\album-r2.gif" />
+    <Content Include="App_Themes\Black\Images\album-r3.gif" />
+    <Content Include="App_Themes\Black\Images\album-r4.gif" />
+    <Content Include="App_Themes\Black\Images\album-rstretch.gif" />
+    <Content Include="App_Themes\Black\Images\album-tstretch.gif" />
+    <Content Include="App_Themes\Black\Images\background.gif" />
+    <Content Include="App_Themes\Black\Images\bullet-1.gif" />
+    <Content Include="App_Themes\Black\Images\bullet-2.gif" />
+    <Content Include="App_Themes\Black\Images\button-add.gif" />
+    <Content Include="App_Themes\Black\Images\button-cancel.gif" />
+    <Content Include="App_Themes\Black\Images\button-create.gif" />
+    <Content Include="App_Themes\Black\Images\button-delete.gif" />
+    <Content Include="App_Themes\Black\Images\button-download.gif" />
+    <Content Include="App_Themes\Black\Images\button-dwn_res.gif" />
+    <Content Include="App_Themes\Black\Images\button-edit.gif" />
+    <Content Include="App_Themes\Black\Images\button-first.jpg" />
+    <Content Include="App_Themes\Black\Images\button-gallery.jpg" />
+    <Content Include="App_Themes\Black\Images\button-import.gif" />
+    <Content Include="App_Themes\Black\Images\button-insert.gif" />
+    <Content Include="App_Themes\Black\Images\button-last.jpg" />
+    <Content Include="App_Themes\Black\Images\button-login.gif" />
+    <Content Include="App_Themes\Black\Images\button-next.jpg" />
+    <Content Include="App_Themes\Black\Images\button-play.jpg" />
+    <Content Include="App_Themes\Black\Images\button-prev.jpg" />
+    <Content Include="App_Themes\Black\Images\button-rename.gif" />
+    <Content Include="App_Themes\Black\Images\button-save.gif" />
+    <Content Include="App_Themes\Black\Images\button-tog24.jpg" />
+    <Content Include="App_Themes\Black\Images\button-tog8.jpg" />
+    <Content Include="App_Themes\Black\Images\footer.gif" />
+    <Content Include="App_Themes\Black\Images\frame-bot--x.gif" />
+    <Content Include="App_Themes\Black\Images\frame-bot-x-.gif" />
+    <Content Include="App_Themes\Black\Images\frame-botx--.gif" />
+    <Content Include="App_Themes\Black\Images\frame-mid--x.gif" />
+    <Content Include="App_Themes\Black\Images\frame-midx--.gif" />
+    <Content Include="App_Themes\Black\Images\frame-top--x.gif" />
+    <Content Include="App_Themes\Black\Images\frame-top-x-.gif" />
+    <Content Include="App_Themes\Black\Images\frame-topx--.gif" />
+    <Content Include="App_Themes\Black\Images\header.gif" />
+    <Content Include="App_Themes\Black\Images\photonav.gif" />
+    <Content Include="App_Themes\Black\Images\spacer.gif" />
+    <Content Include="App_Themes\White\Default.css" />
+    <Content Include="App_Themes\White\Default.skin" />
+    <Content Include="App_Themes\White\Frame.css" />
+    <Content Include="App_Themes\White\Images\album-bstretch.gif" />
+    <Content Include="App_Themes\White\Images\album-l1.gif" />
+    <Content Include="App_Themes\White\Images\album-l2.gif" />
+    <Content Include="App_Themes\White\Images\album-l3.gif" />
+    <Content Include="App_Themes\White\Images\album-l4.gif" />
+    <Content Include="App_Themes\White\Images\album-lstretch.gif" />
+    <Content Include="App_Themes\White\Images\album-mbl.gif" />
+    <Content Include="App_Themes\White\Images\album-mbr.gif" />
+    <Content Include="App_Themes\White\Images\album-mtl.gif" />
+    <Content Include="App_Themes\White\Images\album-mtr.gif" />
+    <Content Include="App_Themes\White\Images\album-r1.gif" />
+    <Content Include="App_Themes\White\Images\album-r2.gif" />
+    <Content Include="App_Themes\White\Images\album-r3.gif" />
+    <Content Include="App_Themes\White\Images\album-r4.gif" />
+    <Content Include="App_Themes\White\Images\album-rstretch.gif" />
+    <Content Include="App_Themes\White\Images\album-tstretch.gif" />
+    <Content Include="App_Themes\White\Images\background.gif" />
+    <Content Include="App_Themes\White\Images\body-repeat-photo.gif" />
+    <Content Include="App_Themes\White\Images\body-repeat.gif" />
+    <Content Include="App_Themes\White\Images\bullet-1.gif" />
+    <Content Include="App_Themes\White\Images\bullet-2.gif" />
+    <Content Include="App_Themes\White\Images\button-add.gif" />
+    <Content Include="App_Themes\White\Images\button-cancel.gif" />
+    <Content Include="App_Themes\White\Images\button-create.gif" />
+    <Content Include="App_Themes\White\Images\button-delete.gif" />
+    <Content Include="App_Themes\White\Images\button-download.gif" />
+    <Content Include="App_Themes\White\Images\button-dwn_res.gif" />
+    <Content Include="App_Themes\White\Images\button-edit.gif" />
+    <Content Include="App_Themes\White\Images\button-first.gif" />
+    <Content Include="App_Themes\White\Images\button-gallery.gif" />
+    <Content Include="App_Themes\White\Images\button-import.gif" />
+    <Content Include="App_Themes\White\Images\button-insert.gif" />
+    <Content Include="App_Themes\White\Images\button-last.gif" />
+    <Content Include="App_Themes\White\Images\button-login.gif" />
+    <Content Include="App_Themes\White\Images\button-next.gif" />
+    <Content Include="App_Themes\White\Images\button-play.gif" />
+    <Content Include="App_Themes\White\Images\button-prev.gif" />
+    <Content Include="App_Themes\White\Images\button-rename.gif" />
+    <Content Include="App_Themes\White\Images\button-save.gif" />
+    <Content Include="App_Themes\White\Images\button-tog24.gif" />
+    <Content Include="App_Themes\White\Images\button-tog8.gif" />
+    <Content Include="App_Themes\White\Images\content-shim-none.gif" />
+    <Content Include="App_Themes\White\Images\content-shim-photo.gif" />
+    <Content Include="App_Themes\White\Images\content-shim-stretch.gif" />
+    <Content Include="App_Themes\White\Images\content-shim.gif" />
+    <Content Include="App_Themes\White\Images\footer-side.gif" />
+    <Content Include="App_Themes\White\Images\footer.gif" />
+    <Content Include="App_Themes\White\Images\frame-bot--x.gif" />
+    <Content Include="App_Themes\White\Images\frame-bot-x-.gif" />
+    <Content Include="App_Themes\White\Images\frame-botx--.gif" />
+    <Content Include="App_Themes\White\Images\frame-mid--x.gif" />
+    <Content Include="App_Themes\White\Images\frame-midx--.gif" />
+    <Content Include="App_Themes\White\Images\frame-top--x.gif" />
+    <Content Include="App_Themes\White\Images\frame-top-x-.gif" />
+    <Content Include="App_Themes\White\Images\frame-topx--.gif" />
+    <Content Include="App_Themes\White\Images\header.gif" />
+    <Content Include="App_Themes\White\Images\photonav-bg.gif" />
+    <Content Include="App_Themes\White\Images\photonav-top-bg.gif" />
+    <Content Include="App_Themes\White\Images\spacer.gif" />
+    <Content Include="Default.aspx" />
+    <Content Include="Family\Books.aspx" />
+    <Content Include="Family\books.xml" />
+    <Content Include="Family\Family.aspx" />
+    <Content Include="Family\LittleBrett.aspx" />
+    <Content Include="Family\MenuFamily.xml" />
+    <Content Include="Family\MenuSabine.xml" />
+    <Content Include="Family\Oliver.aspx" />
+    <Content Include="Family\Sabine\Year1\2003-05.aspx" />
+    <Content Include="Family\Sabine\Year1\2003-06.aspx" />
+    <Content Include="Family\Sabine\Year1\2003-07.aspx" />
+    <Content Include="Family\Sabine\Year1\2003-08.aspx" />
+    <Content Include="Family\Sabine\Year1\2003-09.aspx" />
+    <Content Include="Family\Sabine\Year1\2003-10.aspx" />
+    <Content Include="Family\Sabine\Year1\2003-11.aspx" />
+    <Content Include="Family\Sabine\Year1\2003-12.aspx" />
+    <Content Include="Family\Sabine\Year1\2004-01.aspx" />
+    <Content Include="Family\Sabine\Year1\2004-02.aspx" />
+    <Content Include="Family\Sabine\Year1\2004-03.aspx" />
+    <Content Include="Family\Sabine\Year1\2004-04.aspx" />
+    <Content Include="Family\Sabine\Year1\2004-05.aspx" />
+    <Content Include="Family\Sabine\Year1\Cussing.mp3" />
+    <Content Include="Family\Sabine\Year1\Laughs.mp3" />
+    <Content Include="Family\Sabine\Year1\Sabine.mp3" />
+    <Content Include="Family\Sabine\Year1\Year1.aspx" />
+    <Content Include="Family\Sabine\Year2\2004-06.aspx" />
+    <Content Include="Family\Sabine\Year2\2004-08.aspx" />
+    <Content Include="Family\Sabine\Year2\2004-09.aspx" />
+    <Content Include="Family\Sabine\Year2\2004-10.aspx" />
+    <Content Include="Family\Sabine\Year2\2004-11.aspx" />
+    <Content Include="Family\Sabine\Year2\2004-12.aspx" />
+    <Content Include="Family\Sabine\Year2\2005-01.aspx" />
+    <Content Include="Family\Sabine\Year2\2005-02.aspx" />
+    <Content Include="Family\Sabine\Year2\2005-03.aspx" />
+    <Content Include="Family\Sabine\Year2\2005-04.aspx" />
+    <Content Include="Family\Sabine\Year2\2005-05.aspx" />
+    <Content Include="Family\Sabine\Year2\Year2.aspx" />
+    <Content Include="Family\Sabine\Year3\2005-06.aspx" />
+    <Content Include="Family\Sabine\Year3\2005-07.aspx" />
+    <Content Include="Family\Sabine\Year3\2005-08.aspx" />
+    <Content Include="Family\Sabine\Year3\2005-09.aspx" />
+    <Content Include="Family\Sabine\Year3\2005-10.aspx" />
+    <Content Include="Family\Sabine\Year3\2005-11.aspx" />
+    <Content Include="Family\Sabine\Year3\2005-12.aspx" />
+    <Content Include="Family\Sabine\Year3\2006-01.aspx" />
+    <Content Include="Family\Sabine\Year3\2006-02.aspx" />
+    <Content Include="Family\Sabine\Year3\2006-03.aspx" />
+    <Content Include="Family\Sabine\Year3\2006-04.aspx" />
+    <Content Include="Family\Sabine\Year3\2006-05.aspx" />
+    <Content Include="Family\Sabine\Year3\Year3.aspx" />
+    <Content Include="Family\Sabine\Year4\2006-Fall.aspx" />
+    <Content Include="Family\Sabine\Year4\2006-Summer.aspx" />
+    <Content Include="Family\Sabine\Year4\2006-Winter.aspx" />
+    <Content Include="Family\Sabine\Year4\2007-Camping.aspx" />
+    <Content Include="Family\Sabine\Year4\2007-Winter.aspx" />
+    <Content Include="Family\Sabine\Year4\Year4.aspx" />
+    <Content Include="Global.asax" />
+    <Content Include="History.aspx" />
+    <Content Include="Images\Misc\Floppy.gif" />
+    <Content Include="Images\ScreenShots\MceTvSpaceMgr.JPG" />
+    <Content Include="Images\ScreenShots\MceTvSpaceMgrTH.jpg" />
+    <Content Include="Images\ScreenShots\MN1.JPG" />
+    <Content Include="Images\ScreenShots\MN1th.jpg" />
+    <Content Include="Images\ScreenShots\MN2.JPG" />
+    <Content Include="Images\ScreenShots\MN2th.jpg" />
+    <Content Include="Images\ScreenShots\MN3.JPG" />
+    <Content Include="Images\ScreenShots\MN3th.jpg" />
+    <Content Include="Images\ScreenShots\PT1.JPG" />
+    <Content Include="Images\ScreenShots\PT1th.jpg" />
+    <Content Include="Images\ScreenShots\PT2.JPG" />
+    <Content Include="Images\ScreenShots\PT2th.jpg" />
+    <Content Include="Images\ScreenShots\PT3.JPG" />
+    <Content Include="Images\ScreenShots\PT3th.jpg" />
+    <Content Include="Images\ScreenShots\RSSNet.JPG" />
+    <Content Include="Images\ScreenShots\RSSNetTh.jpg" />
+    <Content Include="Images\ScreenShots\WN.PNG" />
+    <Content Include="Images\ScreenShots\WNth.png" />
+    <Content Include="Professional\Career.aspx" />
+    <Content Include="Professional\Resume.aspx" />
+    <Content Include="Professional\Software.aspx" />
+    <Content Include="Professional\Tally.aspx" />
+    <Content Include="Utils\CurrentVersions.xml" />
+    <Content Include="Utils\index.htm" />
+    <Content Include="Utils\PopTrapSetup.exe" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <None Include="Properties\PublishProfiles\brettrobichaud.pubxml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Classes\PageManager.cs" />
+    <Compile Include="Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Default.master.cs">
+      <DependentUpon>Default.master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Family\Books.aspx.cs">
+      <DependentUpon>Books.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Family\Family.aspx.cs">
+      <DependentUpon>Family.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Family\LittleBrett.aspx.cs">
+      <DependentUpon>LittleBrett.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Family\Oliver.aspx.cs">
+      <DependentUpon>Oliver.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Family\Sabine\Year1\2003-05.aspx.cs">
+      <DependentUpon>2003-05.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Family\Sabine\Year1\2003-06.aspx.cs">
+      <DependentUpon>2003-06.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Family\Sabine\Year1\2003-07.aspx.cs">
+      <DependentUpon>2003-07.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Family\Sabine\Year1\2003-08.aspx.cs">
+      <DependentUpon>2003-08.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Family\Sabine\Year1\2003-09.aspx.cs">
+      <DependentUpon>2003-09.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Family\Sabine\Year1\2003-10.aspx.cs">
+      <DependentUpon>2003-10.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Family\Sabine\Year1\2003-11.aspx.cs">
+      <DependentUpon>2003-11.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Family\Sabine\Year1\2003-12.aspx.cs">
+      <DependentUpon>2003-12.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Family\Sabine\Year1\2004-01.aspx.cs">
+      <DependentUpon>2004-01.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Family\Sabine\Year1\2004-02.aspx.cs">
+      <DependentUpon>2004-02.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Family\Sabine\Year1\2004-03.aspx.cs">
+      <DependentUpon>2004-03.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Family\Sabine\Year1\2004-04.aspx.cs">
+      <DependentUpon>2004-04.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Family\Sabine\Year1\2004-05.aspx.cs">
+      <DependentUpon>2004-05.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Family\Sabine\Year1\Year1.aspx.cs">
+      <DependentUpon>Year1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Family\Sabine\Year2\2004-06.aspx.cs">
+      <DependentUpon>2004-06.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Family\Sabine\Year2\2004-08.aspx.cs">
+      <DependentUpon>2004-08.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Family\Sabine\Year2\2004-09.aspx.cs">
+      <DependentUpon>2004-09.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Family\Sabine\Year2\2004-10.aspx.cs">
+      <DependentUpon>2004-10.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Family\Sabine\Year2\2004-11.aspx.cs">
+      <DependentUpon>2004-11.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Family\Sabine\Year2\2004-12.aspx.cs">
+      <DependentUpon>2004-12.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Family\Sabine\Year2\2005-01.aspx.cs">
+      <DependentUpon>2005-01.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Family\Sabine\Year2\2005-02.aspx.cs">
+      <DependentUpon>2005-02.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Family\Sabine\Year2\2005-03.aspx.cs">
+      <DependentUpon>2005-03.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Family\Sabine\Year2\2005-04.aspx.cs">
+      <DependentUpon>2005-04.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Family\Sabine\Year2\2005-05.aspx.cs">
+      <DependentUpon>2005-05.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Family\Sabine\Year2\Year2.aspx.cs">
+      <DependentUpon>Year2.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Family\Sabine\Year3\2005-06.aspx.cs">
+      <DependentUpon>2005-06.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Family\Sabine\Year3\2005-07.aspx.cs">
+      <DependentUpon>2005-07.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Family\Sabine\Year3\2005-08.aspx.cs">
+      <DependentUpon>2005-08.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Family\Sabine\Year3\2005-09.aspx.cs">
+      <DependentUpon>2005-09.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Family\Sabine\Year3\2005-10.aspx.cs">
+      <DependentUpon>2005-10.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Family\Sabine\Year3\2005-11.aspx.cs">
+      <DependentUpon>2005-11.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Family\Sabine\Year3\2005-12.aspx.cs">
+      <DependentUpon>2005-12.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Family\Sabine\Year3\2006-01.aspx.cs">
+      <DependentUpon>2006-01.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Family\Sabine\Year3\2006-02.aspx.cs">
+      <DependentUpon>2006-02.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Family\Sabine\Year3\2006-03.aspx.cs">
+      <DependentUpon>2006-03.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Family\Sabine\Year3\2006-04.aspx.cs">
+      <DependentUpon>2006-04.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Family\Sabine\Year3\2006-05.aspx.cs">
+      <DependentUpon>2006-05.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Family\Sabine\Year3\Year3.aspx.cs">
+      <DependentUpon>Year3.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Family\Sabine\Year4\2006-Fall.aspx.cs">
+      <DependentUpon>2006-Fall.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Family\Sabine\Year4\2006-Summer.aspx.cs">
+      <DependentUpon>2006-Summer.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Family\Sabine\Year4\2006-Winter.aspx.cs">
+      <DependentUpon>2006-Winter.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Family\Sabine\Year4\2007-Camping.aspx.cs">
+      <DependentUpon>2007-Camping.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Family\Sabine\Year4\2007-Winter.aspx.cs">
+      <DependentUpon>2007-Winter.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Family\Sabine\Year4\Year4.aspx.cs">
+      <DependentUpon>Year4.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="History.aspx.cs">
+      <DependentUpon>History.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Professional\Career.aspx.cs">
+      <DependentUpon>Career.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Professional\Resume.aspx.cs">
+      <DependentUpon>Resume.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Professional\Software.aspx.cs">
+      <DependentUpon>Software.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Professional\Tally.aspx.cs">
+      <DependentUpon>Tally.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Default.master" />
+    <Content Include="Professional\BrettRobichaud Resume.pdf" />
+    <Content Include="Utils\AstroInfo.zip" />
+    <Content Include="Utils\MceTvSpaceMgrSetup.msi" />
+    <Content Include="Utils\Mileage.Net.zip" />
+    <Content Include="Utils\MileageNetSetup.msi" />
+    <Content Include="Utils\RSSNetSetup.msi" />
+    <Content Include="Utils\WeatherNetSetup.msi" />
+    <Content Include="web.sitemap" />
+  </ItemGroup>
+  <ItemGroup />
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>54825</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:54825/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
